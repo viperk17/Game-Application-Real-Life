@@ -11,7 +11,6 @@ import datetime
 
 import pygame
 
-
 def getdate():
     return datetime.datetime.now()
 
@@ -20,10 +19,14 @@ def reminder(mp3, stop_word, file):
     pygame.init()
 
     pygame.display.set_mode((200, 100))
+    #This creates a window of 200width and 100 height
+
+    pygame.display.set_caption("First Game")
 
     pygame.mixer.music.load(mp3)
 
-    pygame.mixer.music.play(0)
+    # pygame.mixer.music.play(0)
+    pygame.mixer.music.play(-1)
 
     while True:
 
