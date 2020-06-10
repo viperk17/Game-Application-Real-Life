@@ -6,9 +6,7 @@ Physical Activity - physical.mp3 every - 45mins - ExDone - log
 pygame to play audio
 """
 import time
-
 import datetime
-
 import pygame
 
 def getdate():
